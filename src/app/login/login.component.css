@@ -216,7 +216,7 @@ form button:hover {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-700px) rotate(600deg);
+    transform: translateY(-1000px) rotate(600deg);
   }
 }
 @keyframes square {
@@ -224,6 +224,6 @@ form button:hover {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-700px) rotate(600deg);
+    transform: translateY(-1000px) rotate(600deg);
   }
 }

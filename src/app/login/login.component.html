@@ -1,11 +1,11 @@
 <div class="wrapper">
 	<div class="container">
-		<h1>Welcome</h1>
-		
-		<form class="form" [formGroup]="loginForm">
-			<input type="text" formControlName="username" placeholder="Username">
-			<input type="password" formControlName="password" placeholder="Password">
-			<button type="submit" id="login-button">Login</button>
+		<h1>Hoşgeldiniz</h1>
+		admin - 1234
+		<form class="form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+			<input type="text" formControlName="username" placeholder="Kullanıcı Adı">
+			<input type="password" formControlName="password" placeholder="Şifre">
+			<button type="submit" id="login-button">Giriş Yap</button>
 		</form>
 	</div>
 	
