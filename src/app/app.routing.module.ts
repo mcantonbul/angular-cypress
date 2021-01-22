@@ -4,7 +4,6 @@ import { AppComponent } from "./app.component";
 import { AuthGuard } from "./auth.guard";
 import { DashboardComponent } from "./dashboard/dashboard.component";
 import { LoginComponent } from "./login/login.component";
-import { LoginLayoutComponent } from "./login/login.layout.component";
 
 const routes: Routes = [
     {
