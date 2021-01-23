@@ -10,27 +10,34 @@ import { LoginComponent } from './login/login.component';
 import { AuthService } from './auth.service';
 import { ToastrModule } from 'ngx-toastr';
 import { NgxSpinnerModule } from 'ngx-spinner';
-import { LoginLayoutComponent } from './login/login.layout.component';
+import { PagesLayoutComponent } from './pages/pages-layout.component';
+import { StatsService } from './pages/stats/stats.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+import { StatsComponent } from './pages/stats/stats.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    PagesLayoutComponent,
     LoginComponent,
-    LoginLayoutComponent
+    StatsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     NgxSpinnerModule,
+    CommonModule,
     ToastrModule.forRoot({
       maxOpened: 1,
       autoDismiss: true
     })
   ],
-  providers: [AuthService],
+  providers: [AuthService, StatsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

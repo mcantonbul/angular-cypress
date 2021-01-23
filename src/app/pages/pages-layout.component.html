@@ -1,12 +1,10 @@
 <div class="area">
-    <div style="font-size:3rem;position: absolute;  top: 50%;left: 50%;transform: translate(-50%, -50%);">
-        <label id="welcome-label">HOŞGELDİNİZ!</label>
-    </div>
+    <router-outlet></router-outlet>
 </div>
 <nav class="main-menu">
     <ul>
         <li>
-            <a href="javascript:void(0)">
+            <a href="javascript:void(0)" routerLink="dashboard">
                 <i class="fa fa-home fa-2x"></i>
                 <span class="nav-text">
                     Anasayfa
@@ -14,11 +12,20 @@
             </a>
 
         </li>
+
+        <li>
+            <a href="javascript:void(0)" routerLink="stats">
+                <i class="fa fa-bar-chart-o fa-2x"></i>
+                <span class="nav-text">
+                    Veri
+                </span>
+            </a>
+        </li>
     </ul>
 
     <ul class="logout" (click)="logout()">
         <li>
-            <a href="#">
+            <a href="javascript:void(0)">
                 <i class="fa fa-power-off fa-2x"></i>
                 <span class="nav-text">
                     Çıkış

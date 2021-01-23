@@ -1,14 +1,15 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { AppComponent } from "./app.component";
 import { AuthGuard } from "./auth.guard";
-import { DashboardComponent } from "./dashboard/dashboard.component";
+import { DashboardComponent } from "./pages/dashboard/dashboard.component";
 import { LoginComponent } from "./login/login.component";
+import { PagesLayoutComponent } from "./pages/pages-layout.component";
+import { StatsComponent } from "./pages/stats/stats.component";
 
-const routes: Routes = [
+export const routes: Routes = [
     {
         path: '',
-        component: AppComponent,
+        component: PagesLayoutComponent,
         canActivateChild: [AuthGuard],
         children: [
             {
@@ -19,6 +20,10 @@ const routes: Routes = [
             {
                 path: 'dashboard',
                 component: DashboardComponent
+            },
+            {
+                path: 'stats',
+                component: StatsComponent
             }
         ]
     },

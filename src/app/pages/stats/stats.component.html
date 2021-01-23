@@ -1,0 +1,17 @@
+<div>
+    <label>Player Name: LeBron James</label>
+    <h1>Ortalama Sezon İstatistikleri</h1>
+    <div *ngIf="data$ | async; let data">
+        <div *ngIf="data.data && data.data.length > 0">
+            <label>Oynadığı Maç Sayısı:</label>
+            <label class="info games-played-label">{{data.data[0].games_played}}</label>
+            <br>
+            <label>Maç Başına Sayı:</label>
+            <label class="info">{{data.data[0].pts}}</label>
+            <br>
+            <label>Maç Başına Asist:</label>
+            <label class="info">{{data.data[0].ast}}</label>
+            <br>
+        </div>
+    </div>
+</div>
