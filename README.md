@@ -1,5 +1,5 @@
 # Angular ile Cypress Kullanımı
-
+  https://medium.com/@m.cantonbul/angular-ve-cypress-ile-e2e-testleri-f5c0b0e10a04
 
 	Login sayfası kaynak kodu: https://codepen.io/Lewitje/pen/BNNJjo
 	Dashboard sayfası kaynak kodu: https://codepen.io/JFarrow/pen/fFrpg
