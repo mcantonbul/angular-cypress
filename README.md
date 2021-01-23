@@ -1,3 +1,10 @@
+# Angular ile Cypress Kullanımı
+
+
+	Login sayfası kaynak kodu: https://codepen.io/Lewitje/pen/BNNJjo
+	Dashboard sayfası kaynak kodu: https://codepen.io/JFarrow/pen/fFrpg
+	NBA oyuncu istatistik servisi: https://www.balldontlie.io/#introduction
+
 # AngularCypress
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.6.
